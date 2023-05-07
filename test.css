@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&family=Satisfy&family=Zilla+Slab:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  cursor: pointer;
+  overflow: hidden;
+}
+.head {
+  display: flex;
+}
+#main_heading {
+  display: flex;
+  flex-direction: column;
+  width: 295px;
+  height: 100vh;
+  border-right: 1px solid rgba(132, 151, 164, 0.2);
+}
+#scroll {
+  display: flex;
+}
+#pageName_container {
+  margin-left: 19px;
+  width: 205px;
+  margin-bottom: 10px;
+
+  padding: 1px;
+}
+#page_Name {
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+  color: rgb(245, 245, 245);
+}
+.image_container {
+  display: flex;
+  color: rgb(245, 245, 245);
+  padding: 10px;
+  width: 205px;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+#img {
+  width: 35px;
+  border-radius: 20px;
+}
+#button {
+  outline: none;
+  border: none;
+  background-color: black;
+  color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-top: 4px;
+  margin-left: 20px;
+  width: 205px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: font-size ease-out 0.1s;
+  transform: translateZ(0);
+  transition: 2s;
+  text-align: center;
+}
+
+/* animated to css */
+#explore,
+#home,
+#reel,
+#search,
+#Messages,
+#notifications,
+#create,
+#profile,
+#more_container {
+  text-align: center;
+  height: 54px;
+}
+#button:hover {
+  font-size: 18px;
+}
+
+p {
+  padding: 7px;
+}
+#more_container {
+  position: relative;
+  top: 90px;
+}
+
+#user_Name {
+  font-size: 12px;
+}
+#user_pic {
+  border-radius: 300px;
+  width: 40px;
+}
+#yes {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+  height: 60px;
+}
+.color {
+  color: white;
+  height: 100vh;
+  width: 80%;
+}
+.user_data {
+  display: flex;
+
+  border: 1px solid red;
+  width: 80%;
+  height: 85%;
+  margin: auto;
+  margin-top: 20px;
+}
+#flex {
+  display: flex;
+  overflow: scroll;
+  border: 1px solid blue;
+  width: 100%;
+}
+.user_info {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+
+  text-align: center;
+  margin: auto;
+  border: 1px solid red;
+  width: 10%;
+}
+#up_profile {
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 2px;
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.c {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid firebrick;
+  width: 80%;
+  margin: auto;
+}
+#line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+#list_Menu {
+  gap: 5px;
+}
+#verified {
+  font-size: 15px;
+  margin-left: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 30px;
+}
+#audio {
+  text-align: start;
+}
+
+#preiod {
+  margin: 5px;
+}
+.my {
+  display: flex;
+  align-items: center;
+}
+.user_data {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+#image_container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+
+  width: 100%;
+  justify-content: center;
+  border: 2px solid rgba(132, 151, 164, 0.2);
+  height: vh;
+}
+#posted {
+  height: 67vh;
+  width: 370px;
+}
+#back_button {
+  position: relative;
+  left: 37px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: rgba(132, 151, 164, 0.2);
+  color: white;
+}
+#next_button {
+  background-color: rgba(132, 151, 164, 0.2);
+  color: white;
+  position: relative;
+  right: 35px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+}
+#friends_suggestion_container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 13px;
+  border: 1px solid red;
+  position: relative;
+
+  height: 60%;
+}
+.user-info-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+
+  width: 72%;
+  padding: px;
+}
+.user_friends_suggestion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 6px;
+}
+#image {
+  width: 50px;
+  border-radius: 50px;
+}
+.user_Names {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.gap {
+  position: relative;
+  right: 106px;
+  font-size: 14px;
+}
+#link:hover {
+  color: white;
+}
+#all:hover {
+  color: rgba(243, 250, 255, 0.549);
+}
+#myusername,
+#all {
+  color: rgb(245, 245, 245);
+}
+
+#ussername {
+  color: rgba(243, 250, 255, 0.549);
+  font-size: 14px;
+}
+.for_you {
+  color: rgba(243, 250, 255, 0.549);
+  font-size: 15px;
+  padding: 5px;
+}
+#image1 {
+  width: 40px;
+  height: 39px;
+  border-radius: 50px;
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+  color: #1877f2;
+}
+
+.about_page,
+#copy_right,
+#about_page {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(243, 250, 255, 0.549);
+}
+#about,
+#help,
+#press,
+#api,
+#job,
+#privacy,
+#terms,
+#locate,
+#lang,
+#meta {
+  padding: 0px;
+  margin: 5px;
+}
+#about:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+
+#help:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#press:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#api:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#job:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#privacy:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#terms:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#locate:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#lang:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#meta:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+#copy_right {
+  margin-top: 20px;
+}
+#about_page {
+  margin-top: 20px;
+}
+
+/*
+
+<div class="user_info">
+<div id="yes">
+  <div id="user_data">
+    <img src="image/myIcon.jpeg" alt="" id="user_pic" />
+    <div class="user_data">
+      <span class="my"
+        >Ezekiel Archibong
+        <span class="material-symbols-outlined" id="verified">
+          verified
+        </span>
+        <span id="preiod">•</span>
+        <span>3h</span>
+      </span>
+
+      <span id="audio">Original audio</span>
+    </div>
+  </div>
+  <!---->
+  <div>
+    <span class="material-symbols-outlined"> more_horiz </span>
+  </div>
+</div>
+<div id="image_container">
+  <button id="back_button">
+    <span class="material-symbols-outlined"> navigate_before </span>
+  </button>
+  <img src="image/myIcon.jpeg" alt="" srcset="" id="posted" />
+  <button id="next_button">
+    <span class="material-symbols-outlined"> navigate_next </span>
+  </button>
+</div>
+
+<!---->
+
+</div>
+/*
+.instagram {
+  width: 100px;
+}
+input {
+  border: 1px solid #dbdbdb;
+  background-color: #fafafa;
+  height: 27.5px;
+  width: 12.5rem;
+  border-radius: 3.5px;
+  padding-left: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+}
+
+.profile-pic {
+  color: "#262626";
+
+  height: 40px;
+  width: 40px;
+}
+
+.select {
+  display: none;
+}
+.wrapper {
+  position: relative;
+  width: 975px;
+  height: 54px;
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 0px 18px;
+}
+.nav {
+  position: absolute;
+  width: 100%;
+  height: 54px;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button1,
+.button2 {
+  outline: none;
+  border: none;
+  font-size: 40px;
+  background-color: none;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.image {
+  width: 600px;
+  height: 500px;
+}
+.main {
+  position: relative;
+  left: 430px;
+}
+.header {
+  border: 2px solid black;
+}
+.selection-bar {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  width: 600px;
+  position: relative;
+  right: 10px;
+}
+.heart {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 240px;
+  height: 20px;
+  height: 40px;
+}
+._ab6- {
+  margin-left: 10px;
+  width: 20px;
+  margin-left: 20px;
+}
+._ab6 {
+  position: relative;
+  left: 35%;
+}
+*/
