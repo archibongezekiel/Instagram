@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&family=Satisfy&family=Zilla+Slab:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+NKo&family=Satisfy&family=Zilla+Slab:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,16 +8,33 @@
 body {
   background-color: black;
   cursor: pointer;
-  overflow: hidden;
 }
 .head {
   display: flex;
+  position: fixed;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 248px 741px 450px;
+  grid-template-rows: 100vh;
+}
+#header {
+  border: 1px solid red;
+  color: aliceblue;
+}
+#section {
+  border: 1px solid red;
+  color: white;
+}
+#footer {
+  border: 1px solid red;
+  color: white;
 }
 #main_heading {
   display: flex;
   flex-direction: column;
-  width: 295px;
-  height: 100vh;
+  width: 238px;
+  height: 110vh;
   border-right: 1px solid rgba(132, 151, 164, 0.2);
 }
 #scroll {
@@ -28,7 +45,7 @@ body {
   width: 205px;
   margin-bottom: 10px;
 
-  padding: 1px;
+  padding: 11px;
 }
 #page_Name {
   font-weight: 100;
@@ -36,9 +53,11 @@ body {
   font-family: "Noto Sans NKo", sans-serif;
   font-family: "Satisfy", cursive;
   color: rgb(245, 245, 245);
+  padding-top: 20px;
 }
 .image_container {
   display: flex;
+  align-items: center;
   color: rgb(245, 245, 245);
   padding: 10px;
   width: 205px;
@@ -91,7 +110,7 @@ p {
 }
 #more_container {
   position: relative;
-  top: 90px;
+  top: 24vh;
 }
 
 #user_Name {
@@ -101,48 +120,24 @@ p {
   border-radius: 300px;
   width: 40px;
 }
-#yes {
-  display: flex;
-  align-items: center;
-  border: 1px solid red;
-  width: 90%;
-  justify-content: space-between;
-  margin: auto;
-  height: 60px;
-}
+
 .color {
   color: white;
-  height: 100vh;
+  height: auto;
   width: 80%;
 }
 .user_data {
-  display: flex;
-
-  border: 1px solid red;
-  width: 80%;
-  height: 85%;
-  margin: auto;
-  margin-top: 20px;
+  border: #1877f2;
 }
 #flex {
   display: flex;
   overflow: scroll;
-  border: 1px solid blue;
-  width: 100%;
-}
-.user_info {
-  display: flex;
-  flex-direction: column;
+  width: 79%;
   position: relative;
-  top: 40px;
-
-  text-align: center;
-  margin: auto;
-  border: 1px solid red;
-  width: 10%;
+  left: 35vh;
 }
+
 #up_profile {
-  border: 1px solid yellow;
   display: flex;
   align-items: center;
 
@@ -158,23 +153,25 @@ p {
 .c {
   display: flex;
   flex-direction: column;
-  border: 1px solid firebrick;
+  border-bottom: 2px solid rgba(132, 151, 164, 0.2);
   width: 80%;
   margin: auto;
+  overflow: scroll;
 }
 #line {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
 }
 
 #list_Menu {
   gap: 5px;
+  font-size: 10px;
 }
 #verified {
   font-size: 15px;
   margin-left: 5px;
-  background-color: blue;
+  background-color: #1877f2;
   color: white;
   border-radius: 30px;
 }
@@ -183,11 +180,12 @@ p {
 }
 
 #preiod {
-  margin: 5px;
+  margin: 1px;
 }
 .my {
   display: flex;
   align-items: center;
+  padding-left: 5px;
 }
 .user_data {
   display: flex;
@@ -198,17 +196,17 @@ p {
   display: flex;
   align-items: center;
   margin: auto;
-
+  border-radius: 10px;
   width: 100%;
   justify-content: center;
   border: 2px solid rgba(132, 151, 164, 0.2);
   height: vh;
 }
 #posted {
-  height: 67vh;
+  height: 700px;
   width: 370px;
 }
-#back_button {
+.navigate_before_button {
   position: relative;
   left: 37px;
   border-radius: 50px;
@@ -217,25 +215,120 @@ p {
   background-color: rgba(132, 151, 164, 0.2);
   color: white;
 }
-#next_button {
-  background-color: rgba(132, 151, 164, 0.2);
-  color: white;
+.navigate_next_button {
   position: relative;
-  right: 35px;
-  border-radius: 50px;
+  right: 34px;
+  background-color: transparent;
   outline: none;
   border: none;
+}
+#navigate_next,
+#navigate_before {
+  font-size: 25px;
+  color: rgba(132, 151, 164, 0.2);
+  background-color: #fff;
+  border-radius: 330px;
 }
 #friends_suggestion_container {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 5%;
   padding: 13px;
-  border: 1px solid red;
   position: relative;
-
-  height: 60%;
+  height: 20%;
+}
+#like_comment_share_save {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3px;
+}
+.f_c_s_s {
+  display: flex;
+  align-items: center;
+}
+#charles_like_button {
+  font-size: 30px;
+  margin: 7px;
+}
+#comment {
+  font-size: 30px;
+  margin: 7px;
+}
+#share {
+  font-size: 30px;
+  margin: 7px;
+}
+#book {
+  font-size: 30px;
+}
+#font {
+  display: flex;
+  flex-direction: column;
+}
+#caption_container {
+  padding-top: 0px;
+}
+#caption_Name {
+  padding: 0;
+  font-size: 16px;
+}
+.caption {
+  font-weight: 100;
+  font-size: 15px;
+}
+.like_number {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 100;
+}
+.View_comment {
+  color: rgba(243, 250, 255, 0.549);
+  display: block;
+}
+p {
+  padding: 1px;
+}
+#comment_section {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+#input_comment {
+  display: flex;
+  align-items: center;
+}
+#post {
+  display: none;
+  color: #1877f2;
+  padding: 5px;
+  font-size: 15px;
+}
+#post3 {
+  display: none;
+  color: #1877f2;
+  padding: 5px;
+  font-size: 15px;
+}
+#charles_Post_Button {
+  display: none;
+  color: #1877f2;
+  padding: 5px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: black;
+}
+#image2 {
+  width: 40px;
+  height: 39px;
+  border-radius: 50px;
+  padding: 2px;
 }
 .user-info-1 {
   display: flex;
@@ -259,6 +352,102 @@ p {
   width: 50px;
   border-radius: 50px;
 }
+#Suggestion_dashbaord {
+  box-sizing: border-box;
+  width: 96%;
+  height: 370px;
+  padding: 7px;
+  border-radius: 10px;
+  position: absolute;
+  top: 200px;
+  background-color: black;
+  display: none;
+}
+
+.dashboard {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+  padding: 10px;
+}
+#title_name_img {
+  display: flex;
+  align-items: center;
+}
+#title_name {
+  display: flex;
+  flex-direction: column;
+}
+#follower_post_following {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  color: white;
+  margin: auto;
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Zilla Slab", serif;
+}
+#h1 {
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Zilla Slab", serif;
+  font-size: 30px;
+}
+#p {
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Zilla Slab", serif;
+}
+#posts,
+#follower,
+#following {
+  text-align: center;
+  background-color: black;
+}
+#post_center {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+  padding: 10px;
+}
+#add_post {
+  margin: auto;
+  text-align: center;
+}
+#add_a_photo_icon {
+  font-size: 5vh;
+
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, orange, darkorchid) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: 5px;
+}
+.follow_button_contaner {
+  width: 100%;
+  margin-top: 20px;
+}
+.follow_button {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  border-radius: 5px;
+  margin: auto;
+  width: 90%;
+  font-size: 20px;
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+  font-family: "Zilla Slab", serif;
+}
+#icon {
+  font-size: 25px;
+  padding: 3px;
+}
 .user_Names {
   display: flex;
   flex-direction: column;
@@ -266,7 +455,7 @@ p {
 }
 .gap {
   position: relative;
-  right: 106px;
+  right: 79px;
   font-size: 14px;
 }
 #link:hover {
@@ -358,140 +547,3 @@ a {
 #about_page {
   margin-top: 20px;
 }
-
-/*
-
-<div class="user_info">
-<div id="yes">
-  <div id="user_data">
-    <img src="image/myIcon.jpeg" alt="" id="user_pic" />
-    <div class="user_data">
-      <span class="my"
-        >Ezekiel Archibong
-        <span class="material-symbols-outlined" id="verified">
-          verified
-        </span>
-        <span id="preiod">•</span>
-        <span>3h</span>
-      </span>
-
-      <span id="audio">Original audio</span>
-    </div>
-  </div>
-  <!---->
-  <div>
-    <span class="material-symbols-outlined"> more_horiz </span>
-  </div>
-</div>
-<div id="image_container">
-  <button id="back_button">
-    <span class="material-symbols-outlined"> navigate_before </span>
-  </button>
-  <img src="image/myIcon.jpeg" alt="" srcset="" id="posted" />
-  <button id="next_button">
-    <span class="material-symbols-outlined"> navigate_next </span>
-  </button>
-</div>
-
-<!---->
-
-</div>
-/*
-.instagram {
-  width: 100px;
-}
-input {
-  border: 1px solid #dbdbdb;
-  background-color: #fafafa;
-  height: 27.5px;
-  width: 12.5rem;
-  border-radius: 3.5px;
-  padding-left: 25px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  outline: none;
-}
-
-.profile-pic {
-  color: "#262626";
-
-  height: 40px;
-  width: 40px;
-}
-
-.select {
-  display: none;
-}
-.wrapper {
-  position: relative;
-  width: 975px;
-  height: 54px;
-  top: 0;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 0px 0px 18px;
-}
-.nav {
-  position: absolute;
-  width: 100%;
-  height: 54px;
-  top: 0;
-  background-color: #ffffff;
-  border-bottom: 1px solid #dbdbdb;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.button1,
-.button2 {
-  outline: none;
-  border: none;
-  font-size: 40px;
-  background-color: none;
-}
-.photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 70px;
-}
-
-.image {
-  width: 600px;
-  height: 500px;
-}
-.main {
-  position: relative;
-  left: 430px;
-}
-.header {
-  border: 2px solid black;
-}
-.selection-bar {
-  display: flex;
-  justify-content: center;
-  border: 1px solid black;
-  align-items: center;
-  width: 600px;
-  position: relative;
-  right: 10px;
-}
-.heart {
-  display: flex;
-  align-items: center;
-  position: relative;
-  right: 240px;
-  height: 20px;
-  height: 40px;
-}
-._ab6- {
-  margin-left: 10px;
-  width: 20px;
-  margin-left: 20px;
-}
-._ab6 {
-  position: relative;
-  left: 35%;
-}
-*/
