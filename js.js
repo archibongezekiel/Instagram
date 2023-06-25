@@ -1,7 +1,6 @@
 "use strict";
 //charles Account information//
-const charles_Account_Pic = document.querySelector(".charles_Account_Pic");
-const navigate_next_button = document.querySelector(".navigate_next_button");
+/*onst navigate_next_button = document.querySelector(".navigate_next_button");
 const navigate_before_button = document.querySelector(
   ".navigate_before_button"
 );
@@ -128,45 +127,114 @@ commentSection3.addEventListener("keypress", (e) => {
     }
   });
 });*/
-const nameOfUser = document.querySelector("#nameOfUser");
-//
-//const userName = document.querySelector("#userName");
-//
-const image2 = document.querySelector("#image2");
-//
-const follower = document.querySelector(".follower");
-//
-const nameOfUser2 = document.querySelector("#nameOfUser2");
-//
-const dashBoard = document.querySelector("#Suggestion_dashbaord");
-//
-const myUserName = document.querySelector(".name1");
-//
-const ru_ingwe = document.querySelector(".ru_ingwe");
-//
-const odiokinneh = document.querySelector(".odiokinneh");
-//
-//
-const _godswillokon = document.querySelector("._godswillokon");
-//
-//
-const n = document.querySelector(".n");
-//
-//
-n.addEventListener("mouseover", () => {
-  dashBoard.style.display = "inline";
-  image2.setAttribute("src", "image/images (2).jpeg");
-  nameOfUser.innerText = "i.r.i.s_9";
-  nameOfUser2.innerText = "i.r.i.s_9";
-  n.addEventListener("mouseout", () => {
-    dashBoard.style.display = "none";
+
+////////////////////////////////////////////////////////////////////////////////////
+const randomName = document.querySelector("#random_Name"); /////////////////////////
+const randomPhoto = document.querySelector("#random_Photo"); ////////////////////////
+const suggestion_container = document.querySelector(".suggestion_container"); ///////
+const photoShareByRandom = document.querySelector("#photoShareByRandom"); ///////////
+const random_UserName = document.querySelector("#random_UserName"); //////////////////
+const follow_button = document.querySelector(".follow_button"); //////////////////////
+let inc = 0; ////////////////////////////////////////////////////////////////////////
+const follower = document.querySelector(".follower"); ////////////////////////////////
+const i = document.querySelector("#f");
+////////////////////////////////////////////////////////////////////////////////////
+class car {
+  ezekiel() {
+    suggestion_container.style.display = "inlin";
+    randomPhoto.setAttribute("src", "image/photo.jpeg");
+    randomName.innerText = "Ezekiel Bassey";
+    random_UserName.innerText = "Ezekiel Archibong";
+    photoShareByRandom.innerText = "Ezekiel Bassey";
+    follower.innerText = inc;
+  }
+  Precious() {
+    suggestion_container.style.display = "inline";
+    randomPhoto.setAttribute("src", "image/images (2).jpeg");
+    randomName.innerText = "Precious Robson";
+    random_UserName.innerText = "Precious Robson";
+    photoShareByRandom.innerText = "Precious Robson";
+  }
+  Diana() {
+    suggestion_container.style.display = "inline";
+    randomPhoto.setAttribute("src", "image/images (3).jpeg");
+    randomName.innerText = "Diana Bassey";
+    random_UserName.innerText = "Diana Bassey";
+    photoShareByRandom.innerText = "Diana Bassey";
+  }
+  Grace() {
+    suggestion_container.style.display = "inline";
+    randomPhoto.setAttribute("src", "image/images (5).jpeg");
+    randomName.innerText = "Grace Archibong";
+    random_UserName.innerText = "Grace Archibong";
+    photoShareByRandom.innerText = "Grace Archibong";
+  }
+
+  follow() {
+    inc = inc + 1;
+  }
+}
+////////////////////////////////////////////////////////////////////////
+const ezekielHoverLink = document.querySelector(".ezekielHoverLink"); ///
+let ezekiel = new car(); //////////////////////////////////////////////
+ezekielHoverLink.addEventListener("mouseover", () => {
+  ezekiel.ezekiel();
+
+  suggestion_container.addEventListener("mouseover", () => {
+    suggestion_container.style.display = "inline";
+    suggestion_container.addEventListener("mouseout", () => {
+      suggestion_container.style.display = "none";
+    });
   });
 });
-//
+let numberInc = new car();
+follow_button.addEventListener("click", () => {
+  numberInc.follow();
+  if (inc === 1) {
+    follower.innerText = inc;
+  }
+});
+///////////////////////////////////////////////////
+
+i.addEventListener("click", () => {
+  numberInc.follow();
+});
+///////////////////////////////////////////////////////////////////////////
+const preciousHoverLink = document.querySelector(".preciousHoverLink"); ///
+let Precious = new car(); ///////////////////////////////////////////////////
+preciousHoverLink.addEventListener("mouseover", () => {
+  Precious.Precious();
+  setTimeout(myGreeting, 8000);
+  function myGreeting() {
+    suggestion_container.style.display = "none";
+  }
+});
+//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////
+const dianaHoverLink = document.querySelector(".dianaHoverLink"); //////////////
+let Diana = new car(); //////////////////////////////////////////////////////////
+dianaHoverLink.addEventListener("mouseover", () => {
+  Diana.Diana();
+  setTimeout(myGreeting, 8000);
+  function myGreeting() {
+    suggestion_container.style.display = "none";
+  }
+});
+////////////////////////////////////////////////////////////////////////////////
+const graceHoverLink = document.querySelector(".graceHoverLink"); //////////////
+let Grace = new car(); //////////////////////////////////////////////////////////
+graceHoverLink.addEventListener("mouseover", () => {
+  Grace.Grace();
+  setTimeout(myGreeting, 8000);
+  function myGreeting() {
+    suggestion_container.style.display = "none";
+  }
+});
+/*
 myUserName.addEventListener("mouseover", () => {
   dashBoard.style.display = "inline";
   image2.setAttribute("src", "image/images (3).jpeg");
-  nameOfUser.innerText = "KeKe_flawa";
+  nameOfUser.innerText = "KeKeflawa";
   nameOfUser2.innerText = "KeKe_flawa";
 
   myUserName.addEventListener("mouseout", () => {
@@ -223,17 +291,7 @@ _godswillokon.addEventListener("mouseover", () => {
       </div>
     </div>
     <div id="follower_post_following">
-      <div id="posts">
-        <div>0</div>
-        <div>posts</div>
-      </div>
-      <div id="follower">
-        <div class="follower">0</div>
-        <div>followers</div>
-      </div>
-      <div id="following">
-        <div>0</div>
-        <div>followings</div>
+     
       </div>
     </div>
   </div>

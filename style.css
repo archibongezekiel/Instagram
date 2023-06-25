@@ -26,10 +26,9 @@ body #side_Content .section {
   overflow: scroll;
 }
 body #side_Content .footer {
-  border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 body #side_Content .footer #archibongezekie_Profile {
   display: flex;
@@ -169,11 +168,93 @@ body #side_Content .footer #page_information_Container .about_page #language_sel
   outline: none;
   background-color: black;
   color: rgba(243, 250, 255, 0.549);
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Urbanist", sans-serif;
   margin: 5px;
 }
 body #side_Content .footer #page_information_Container #copy_right {
   display: flex;
   align-items: center;
   margin-top: 15px;
+}
+body #side_Content .footer .suggestion_container {
+  border-radius: 40px;
+  font-family: "Urbanist", sans-serif;
+  position: relative;
+  bottom: 20%;
+  display: noe;
+}
+body #side_Content .footer .suggestion_container #suggestion_contaiber {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  margin-left: 5px;
+  padding: 10px;
+}
+body #side_Content .footer .suggestion_container #suggestion_contaiber #random_Photo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  padding: 8px;
+}
+body #side_Content .footer .suggestion_container #suggestion_contaiber #random_Photo #random_Name {
+  padding: 5px;
+}
+body #side_Content .footer .suggestion_container #suggestion_contaiber .suggestion_Name_container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+body #side_Content .footer .suggestion_container .post_Follower_Following {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+  font-family: "Urbanist", sans-serif;
+  background-color: black;
+  padding: 10px;
+}
+body #side_Content .footer .suggestion_container .post_Follower_Following #posts,
+body #side_Content .footer .suggestion_container .post_Follower_Following #follower,
+body #side_Content .footer .suggestion_container .post_Follower_Following #following {
+  text-align: center;
+  padding: 10px;
+  font-family: "Urbanist", sans-serif;
+  background-color: black;
+}
+body #side_Content .footer #post_center {
+  text-align: center;
+  padding: 10px;
+  font-family: "Urbanist", sans-serif;
+  background-color: black;
+}
+body #side_Content .footer #post_center #add_post {
+  margin: 10px;
+}
+body #side_Content .footer #post_center #add_a_photo_icon {
+  font-size: 5vh;
+  background: linear-gradient(black, black) padding-box, linear-gradient(to right, orange, darkorchid) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  padding: 10px;
+}
+body #side_Content .footer #post_center #p {
+  margin: 13px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+  background-color: black;
+}
+body #side_Content .footer #post_center .follow_button {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin: auto;
+  width: 90%;
+  font-size: 20px;
+  font-family: "Urbanist", sans-serif;
 }/*# sourceMappingURL=style.css.map */
