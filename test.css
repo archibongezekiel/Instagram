@@ -8,6 +8,28 @@
 body {
   background-color: black;
   cursor: pointer;
+  border: 1px solid red;
+}
+#side_Content {
+  display: grid;
+  grid-template-columns: 240px 755px 230px;
+  grid-template-rows: 100px;
+}
+.header {
+  color: white;
+  border: 1px solid blue;
+  text-align: center;
+}
+.section {
+  color: #fff;
+  border: 1px solid orange;
+  text-align: center;
+  overflow: scroll;
+}
+.footer {
+  color: #fff;
+  border: 1px solid white;
+  text-align: center;
 }
 .head {
   display: flex;
@@ -15,20 +37,21 @@ body {
 }
 .grid-container {
   display: grid;
-  grid-template-columns: 248px 741px 450px;
+  grid-template-columns: 248px 741px 436px;
   grid-template-rows: 100vh;
+  flex-direction: column;
 }
+
 #header {
-  border: 1px solid red;
   color: aliceblue;
 }
 #section {
-  border: 1px solid red;
   color: white;
+  border: 1px solid rebeccapurple;
 }
 #footer {
-  border: 1px solid red;
   color: white;
+  border: 1px solid blue;
 }
 #main_heading {
   display: flex;
@@ -44,7 +67,6 @@ body {
   margin-left: 19px;
   width: 205px;
   margin-bottom: 10px;
-
   padding: 11px;
 }
 #page_Name {
@@ -140,30 +162,34 @@ p {
 #up_profile {
   display: flex;
   align-items: center;
-
   justify-content: space-between;
   padding: 2px;
-  width: 100%;
+  width: 90%;
   height: 60px;
   font-size: 14px;
-
   margin-left: auto;
   margin-right: auto;
+}
+#profile_border {
+  display: flex;
 }
 .c {
   display: flex;
   flex-direction: column;
+
   border-bottom: 2px solid rgba(132, 151, 164, 0.2);
-  width: 80%;
+  width: 60%;
   margin: auto;
-  overflow: scroll;
+  margin-top: 20px;
+  border: 1px solid red;
+  height: 100vh;
+  color: white;
 }
 #line {
   display: flex;
   align-items: center;
   gap: 2px;
 }
-
 #list_Menu {
   gap: 5px;
   font-size: 10px;
@@ -197,14 +223,14 @@ p {
   align-items: center;
   margin: auto;
   border-radius: 10px;
-  width: 100%;
+  width: 90%;
   justify-content: center;
   border: 2px solid rgba(132, 151, 164, 0.2);
   height: vh;
 }
 #posted {
   height: 700px;
-  width: 370px;
+  width: 340px;
 }
 .navigate_before_button {
   position: relative;
@@ -233,16 +259,23 @@ p {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 5%;
+  width: 435px;
   padding: 13px;
   position: relative;
-  height: 20%;
+  height: 80%;
+  border: 1px solid blue;
+  position: relative;
+  left: 350px;
 }
 #like_comment_share_save {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 3px;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .f_c_s_s {
   display: flex;
@@ -266,9 +299,15 @@ p {
 #font {
   display: flex;
   flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
 }
 #caption_container {
   padding-top: 0px;
+  border: 1px solid rebeccapurple;
+  height: 200px;
 }
 #caption_Name {
   padding: 0;
@@ -338,7 +377,6 @@ p {
 .user-info {
   display: flex;
   align-items: center;
-
   width: 72%;
   padding: px;
 }
@@ -416,14 +454,13 @@ p {
 }
 #add_a_photo_icon {
   font-size: 5vh;
-
   background: linear-gradient(black, black) padding-box,
     linear-gradient(to right, orange, darkorchid) border-box;
   border-radius: 50em;
   border: 2px solid transparent;
   padding: 5px;
 }
-.follow_button_contaner {
+.follow_button_container {
   width: 100%;
   margin-top: 20px;
 }
@@ -488,7 +525,12 @@ a {
   text-decoration: none;
   color: #1877f2;
 }
-
+#d {
+  display: flex;
+  border: 5px solid white;
+  width: 160%;
+  overflow: scroll;
+}
 .about_page,
 #copy_right,
 #about_page {

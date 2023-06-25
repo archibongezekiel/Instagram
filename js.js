@@ -209,312 +209,310 @@ _godswillokon.addEventListener("mouseover", () => {
 //
 //
 
-//
-/*<!-- charles account -->
-<div class="c">
-  <div id="up_profile">
-    <div id="line">
-      <span id="next-back">
-        <img src="gallery2/charlesIG.jpg" id="user_pic" />
-      </span>
-      <span class="my">Zealcodes</span>
-      <span class="material-symbols-outlined" id="verified">
-        verified
-      </span>
-      <span id="preiod"></span>
-      <span></span>
+/*
+<div id="friends_suggestion_container">
+<!--suggestion dashboard-->
+<div id="Suggestion_dashbaord">
+  <!--dashboard-->
+  <div class="dashboard">
+    <div id="title_name_img">
+      <img src="" alt="" id="image2" />
+      <div id="title_name">
+        <span id="nameOfUser"></span>
+        <!-- <span id="userName">irene</span>-->
+      </div>
     </div>
-    <span id="list_Menu">• • •</span>
-
-    <!-- end-->
-  </div>
-  <div id="image_container">
-    <button class="navigate_before_button">
-      <span class="material-symbols-outlined" id="navigate_before">
-        navigate_before
-      </span>
-    </button>
-    <img
-      src="gallery2/charles1.jpeg"
-      id="posted"
-      alt=""
-      class="charles_Account_Pic"
-    />
-    <button class="navigate_next_button">
-      <span class="material-symbols-outlined" id="navigate_next">
-        navigate_next
-      </span>
-    </button>
-  </div>
-  <!--comment like share icon -->
-  <div id="like_comment_share_save">
-    <div class="f_c_s_s">
-      <span
-        class="material-symbols-outlined"
-        id="charles_like_button"
-        title="Like"
-      >
-        favorite
-      </span>
-      <svg
-        aria-label="Comment"
-        class="x1lliihq x1n2onr6"
-        color="rgb(245, 245, 245)"
-        fill="rgb(245, 245, 245)"
-        height="24"
-        role="img"
-        viewBox="0 0 24 24"
-        width="25"
-        id="comment"
-      >
-        <title>Comment</title>
-        <path
-          d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
-          fill="none"
-          stroke="currentColor"
-          stroke-linejoin="round"
-          stroke-width="2"
-        ></path>
-      </svg>
-      <svg
-        aria-label="Share Post"
-        class="x1lliihq x1n2onr6"
-        color="rgb(245, 245, 245)"
-        fill="rgb(245, 245, 245)"
-        height="24"
-        role="img"
-        viewBox="0 0 24 24"
-        width="24"
-        id="share"
-      >
-        <title>Share Post</title>
-        <line
-          fill="none"
-          stroke="currentColor"
-          stroke-linejoin="round"
-          stroke-width="2"
-          x1="22"
-          x2="9.218"
-          y1="3"
-          y2="10.083"
-        ></line>
-        <polygon
-          fill="none"
-          points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
-          stroke="currentColor"
-          stroke-linejoin="round"
-          stroke-width="2"
-        ></polygon>
-      </svg>
-    </div>
-    <span class="material-symbols-outlined" id="book" title="save">
-      bookmark
-    </span>
-
-    <!-- end comment like share icon -->
-  </div>
-
-  <div id="font">
-    <div class="like_number" id="i"></div>
-    <div id="caption_container">
-      <b id="caption_Name">Zealcodes</b>
-      <span class="caption"
-        >this new week, we think smarter and work smarter.
-        <p>happy new week, guys</p></span
-      >
-    </div>
-    <div class="View_comment" id="comment_container"></div>
-    <div id="caption_container">
-      <div id="input_comment">
-        <input
-          type="text"
-          name="Add a comment... "
-          id="comment_section"
-          placeholder="Add a comment..."
-          class="charles_Comment_Input"
-        />
-        <button id="charles_Post_Button"><b>Post</b></button>
-        <svg
-          aria-label="Emoji"
-          class="x1lliihq x1n2onr6"
-          color="rgb(115, 115, 115)"
-          fill="rgb(115, 115, 115)"
-          height="13"
-          role="img"
-          viewBox="0 0 24 24"
-          width="13"
-        >
-          <title>Emoji</title>
-          <path
-            d="M15.83 10.997a1.167 1.167 0 1 0 1.167 1.167 1.167 1.167 0 0 0-1.167-1.167Zm-6.5 1.167a1.167 1.167 0 1 0-1.166 1.167 1.167 1.167 0 0 0 1.166-1.167Zm5.163 3.24a3.406 3.406 0 0 1-4.982.007 1 1 0 1 0-1.557 1.256 5.397 5.397 0 0 0 8.09 0 1 1 0 0 0-1.55-1.263ZM12 .503a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12 .503Zm0 21a9.5 9.5 0 1 1 9.5-9.5 9.51 9.51 0 0 1-9.5 9.5Z"
-          ></path>
-        </svg>
+    <div id="follower_post_following">
+      <div id="posts">
+        <div>0</div>
+        <div>posts</div>
+      </div>
+      <div id="follower">
+        <div class="follower">0</div>
+        <div>followers</div>
+      </div>
+      <div id="following">
+        <div>0</div>
+        <div>followings</div>
       </div>
     </div>
   </div>
-  <!--end div  c -->
+  <!--dashboard-->
+  <div id="post_center">
+    <div id="add_post">
+      <span class="material-symbols-outlined" id="add_a_photo_icon">
+        add_a_photo
+      </span>
+      <h1 id="h1">No post yet</h1>
+    </div>
+    <div>
+      <p id="p">
+        When <b id="nameOfUser2"></b> share a photos and reels you'll
+        see them here.
+      </p>
+    </div>
+  </div>
+  <div class="follow_button_contaner">
+    <button type="submit" class="follow_button">
+      <span class="material-symbols-outlined" id="icon">
+        person_add
+      </span>
+      Follow
+    </button>
+  </div>
+
+  <!--suggestion dashboard  -->
+</div>
+<!--suggestion dashboard  -->
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/myIcon.jpeg" alt="" id="image" />
+    <div class="user_Names">
+      <a href="archibongezekie.html"
+        ><span id="myusername">archibongezekie</span></a
+      >
+      <span id="ussername">Ezekiel Archibong</span>
+    </div>
+  </div>
+  <div class="gap"><a href="">Switch</a></div>
+</div>
+<div class="user_friends_suggestion">
+  <span class="for_you">Suggestion for you</span>
+  <a href="" id="all" class="gap">See All</a>
+</div>
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/images (2).jpeg" alt="" id="image1" />
+    <div class="user_Names">
+      <span id="myusername" class="n">i.r.i.s_9</span>
+      <span id="ussername">Follow by richard_ingwe</span>
+    </div>
+  </div>
+  <div class="gap"><a href="" id="link">Follow</a></div>
+</div>
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/images (3).jpeg" alt="" id="image1" />
+    <div class="user_Names">
+      <span id="myusername" class="name1">KeKe_flawa</span>
+      <span id="ussername">Follow by richard_ingwe + 1 more</span>
+    </div>
+  </div>
+  <div class="gap">
+    <a href="" id="link">Follow</a>
+  </div>
+</div>
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/images (4).jpeg" alt="" id="image1" />
+    <div class="user_Names">
+      <span id="myusername" class="ru_ingwe">ru_ingwe</span>
+      <span id="ussername">Follow by richard_ingwe + 1 more</span>
+    </div>
+  </div>
+  <div class="gap"><a href="" id="link">Follow</a></div>
+</div>
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/images (5).jpeg" alt="" id="image1" />
+    <div class="user_Names">
+      <span id="myusername" class="odiokinneh">odiokinneh</span>
+      <span id="ussername">Follow by richard_ingwe</span>
+    </div>
+  </div>
+  <div class="gap"><a href="" id="link">Follow</a></div>
+</div>
+
+<div class="user-info-1">
+  <div class="user-info">
+    <img src="image/images.jpeg" alt="" id="image1" />
+    <div class="user_Names">
+      <span id="myusername" class="_godswillokon">_godswillokon</span>
+      <span id="ussername">Follow by walter_gadget + 2 more</span>
+    </div>
+  </div>
+  <div class="gap"><a href="" id="link">Follow</a></div>
+</div>
+
+<div id="about_page">
+  <p id="about">About</p>
+  <span>•</span>
+  <p id="help">Help</p>
+  <span>•</span>
+  <p id="press">Press</p>
+  <span>•</span>
+  <p id="api">API</p>
+  <span>•</span>
+  <p id="job">Jobs</p>
+  <span>•</span>
+  <p id="privacy">Privacy</p>
+  <span>•</span>
+  <p id="terms">Terms</p>
+  <span>•</span>
+</div>
+<div class="about_page">
+  <p id="locate">Locations</p>
+  <span>•</span>
+  <p id="lang">Language</p>
+  <span>•</span>
+  <p id="meta">Meta verified</p>
+</div>
+<div id="copy_right">
+  <p><span>©</span> 2023 INSTAGRAM FROM META</p>
+</div>
 </div>*/
-
-//////////////////
-/*
-        <div id="friends_suggestion_container">
-          <!--suggestion dashboard-->
-          <div id="Suggestion_dashbaord">
-            <!--dashboard-->
-            <div class="dashboard">
-              <div id="title_name_img">
-                <img src="" alt="" id="image2" />
-                <div id="title_name">
-                  <span id="nameOfUser"></span>
-                  <!-- <span id="userName">irene</span>-->
-                </div>
-              </div>
-              <div id="follower_post_following">
-                <div id="posts">
-                  <div>0</div>
-                  <div>posts</div>
-                </div>
-                <div id="follower">
-                  <div class="follower">0</div>
-                  <div>followers</div>
-                </div>
-                <div id="following">
-                  <div>0</div>
-                  <div>followings</div>
-                </div>
-              </div>
+////////////////////////////////////
+/*<div class="c">
+          <div id="up_profile">
+            <div id="line">
+              <span id="next-back">
+                <img src="gallery2/charlesIG.jpg" id="user_pic" />
+              </span>
+              <span class="my">Zealcodes</span>
+              <span class="material-symbols-outlined" id="verified">
+                verified
+              </span>
+              <span id="preiod"></span>
+              <span></span>
             </div>
-            <!--dashboard-->
-            <div id="post_center">
-              <div id="add_post">
-                <span class="material-symbols-outlined" id="add_a_photo_icon">
-                  add_a_photo
-                </span>
-                <h1 id="h1">No post yet</h1>
-              </div>
-              <div>
-                <p id="p">
-                  When <b id="nameOfUser2"></b> share a photos and reels you'll
-                  see them here.
-                </p>
-              </div>
-            </div>
-            <div class="follow_button_contaner">
-              <button type="submit" class="follow_button">
-                <span class="material-symbols-outlined" id="icon">
-                  person_add
-                </span>
-                Follow
-              </button>
-            </div>
-
-            <!--suggestion dashboard  -->
+            <span id="list_Menu">• • •</span>
+            <!-- end-->
           </div>
-          <!--suggestion dashboard  -->
+           <!-- end-->
+          <div id="image_container">
+            <button class="navigate_before_button">
+              <span class="material-symbols-outlined" id="navigate_before">
+                navigate_before
+              </span>
+            </button>
+            <img
+              src="gallery2/charles1.jpeg"
+              id="posted"
+              alt=""
+              class="charles_Account_Pic"
+            />
+            <button class="navigate_next_button">
+              <span class="material-symbols-outlined" id="navigate_next">
+                navigate_next
+              </span>
+            </button>
+          </div>
+          <!--comment like share icon -->
+          <div id="like_comment_share_save">
+            <div class="f_c_s_s">
+              <span
+                class="material-symbols-outlined"
+                id="charles_like_button"
+                title="Like"
+              >
+                favorite
+              </span>
+              <svg
+                aria-label="Comment"
+                class="x1lliihq x1n2onr6"
+                color="rgb(245, 245, 245)"
+                fill="rgb(245, 245, 245)"
+                height="24"
+                role="img"
+                viewBox="0 0 24 24"
+                width="25"
+                id="comment"
+              >
+                <title>Comment</title>
+                <path
+                  d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></path>
+              </svg>
+              <svg
+                aria-label="Share Post"
+                class="x1lliihq x1n2onr6"
+                color="rgb(245, 245, 245)"
+                fill="rgb(245, 245, 245)"
+                height="24"
+                role="img"
+                viewBox="0 0 24 24"
+                width="24"
+                id="share"
+              >
+                <title>Share Post</title>
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  x1="22"
+                  x2="9.218"
+                  y1="3"
+                  y2="10.083"
+                ></line>
+                <polygon
+                  fill="none"
+                  points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                ></polygon>
+              </svg>
+            </div>
+            <span class="material-symbols-outlined" id="book" title="save">
+              bookmark
+            </span>
+           
+            <!-- end comment like share icon -->
+          </div>
 
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/myIcon.jpeg" alt="" id="image" />
-              <div class="user_Names">
-                <a href="archibongezekie.html"
-                  ><span id="myusername">archibongezekie</span></a
+          <div id="font">
+            <div class="like_number" id="i"></div>
+            <div id="caption_container">
+              <b id="caption_Name">Zealcodes</b>
+              <span class="caption"
+                >this new week, we think smarter and work smarter.
+                <p>happy new week, guys</p></span
+              > <div class="View_comment" id="comment_container"></div>
+            </div>
+            
+            <div id="caption_container">
+              <div id="input_comment">
+                <input
+                  type="text"
+                  name="Add a comment... "
+                  id="comment_section"
+                  placeholder="Add a comment..."
+                  class="charles_Comment_Input"
+                />
+                <button id="charles_Post_Button"><b>Post</b></button>
+                <svg
+                  aria-label="Emoji"
+                  class="x1lliihq x1n2onr6"
+                  color="rgb(115, 115, 115)"
+                  fill="rgb(115, 115, 115)"
+                  height="13"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="13"
                 >
-                <span id="ussername">Ezekiel Archibong</span>
+                  <title>Emoji</title>
+                  <path
+                    d="M15.83 10.997a1.167 1.167 0 1 0 1.167 1.167 1.167 1.167 0 0 0-1.167-1.167Zm-6.5 1.167a1.167 1.167 0 1 0-1.166 1.167 1.167 1.167 0 0 0 1.166-1.167Zm5.163 3.24a3.406 3.406 0 0 1-4.982.007 1 1 0 1 0-1.557 1.256 5.397 5.397 0 0 0 8.09 0 1 1 0 0 0-1.55-1.263ZM12 .503a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12 .503Zm0 21a9.5 9.5 0 1 1 9.5-9.5 9.51 9.51 0 0 1-9.5 9.5Z"
+                  ></path>
+                </svg>
               </div>
             </div>
-            <div class="gap"><a href="">Switch</a></div>
           </div>
-          <div class="user_friends_suggestion">
-            <span class="for_you">Suggestion for you</span>
-            <a href="" id="all" class="gap">See All</a>
-          </div>
-
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/images (2).jpeg" alt="" id="image1" />
-              <div class="user_Names">
-                <span id="myusername" class="n">i.r.i.s_9</span>
-                <span id="ussername">Follow by richard_ingwe</span>
-              </div>
-            </div>
-            <div class="gap"><a href="" id="link">Follow</a></div>
-          </div>
-
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/images (3).jpeg" alt="" id="image1" />
-              <div class="user_Names">
-                <span id="myusername" class="name1">KeKe_flawa</span>
-                <span id="ussername">Follow by richard_ingwe + 1 more</span>
-              </div>
-            </div>
-            <div class="gap">
-              <a href="" id="link">Follow</a>
-            </div>
-          </div>
-
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/images (4).jpeg" alt="" id="image1" />
-              <div class="user_Names">
-                <span id="myusername" class="ru_ingwe">ru_ingwe</span>
-                <span id="ussername">Follow by richard_ingwe + 1 more</span>
-              </div>
-            </div>
-            <div class="gap"><a href="" id="link">Follow</a></div>
-          </div>
-
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/images (5).jpeg" alt="" id="image1" />
-              <div class="user_Names">
-                <span id="myusername" class="odiokinneh">odiokinneh</span>
-                <span id="ussername">Follow by richard_ingwe</span>
-              </div>
-            </div>
-            <div class="gap"><a href="" id="link">Follow</a></div>
-          </div>
-
-          <div class="user-info-1">
-            <div class="user-info">
-              <img src="image/images.jpeg" alt="" id="image1" />
-              <div class="user_Names">
-                <span id="myusername" class="_godswillokon">_godswillokon</span>
-                <span id="ussername">Follow by walter_gadget + 2 more</span>
-              </div>
-            </div>
-            <div class="gap"><a href="" id="link">Follow</a></div>
-          </div>
-
-          <div id="about_page">
-            <p id="about">About</p>
-            <span>•</span>
-            <p id="help">Help</p>
-            <span>•</span>
-            <p id="press">Press</p>
-            <span>•</span>
-            <p id="api">API</p>
-            <span>•</span>
-            <p id="job">Jobs</p>
-            <span>•</span>
-            <p id="privacy">Privacy</p>
-            <span>•</span>
-            <p id="terms">Terms</p>
-            <span>•</span>
-          </div>
-          <div class="about_page">
-            <p id="locate">Locations</p>
-            <span>•</span>
-            <p id="lang">Language</p>
-            <span>•</span>
-            <p id="meta">Meta verified</p>
-          </div>
-          <div id="copy_right">
-            <p><span>©</span> 2023 INSTAGRAM FROM META</p>
-          </div>
+          <!--end div  c -->
         </div>*/
-//////////////////////////////////////////////
-/*<div class="head">
+/////////////////////////////////////////
+/////////////////////
+/*div class="head">
         <div id="main_heading">
           <div id="pageName_container">
             <h2 title="Instagram" id="page_Name">instagram</h2>

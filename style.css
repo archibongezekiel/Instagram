@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+body #side_Content {
+  display: grid;
+  grid-template-columns: 240px 760px 440px;
+  grid-template-rows: 100vh;
+  overflow: hidden;
+}
+body #side_Content .header {
+  border-right: 1px solid rgba(132, 151, 164, 0.2);
+  text-align: center;
+  overflow: hidden;
+}
+body #side_Content .section {
+  border: 1px solid red;
+  text-align: center;
+  overflow: scroll;
+}
+body #side_Content .footer {
+  border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  font-family: "Rajdhani", sans-serif;
+}
+body #side_Content .footer #archibongezekie_Profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container #archibongezekie_Picture {
+  width: 60px;
+  height: px;
+  border-radius: 50px;
+  padding: 5px;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container a {
+  text-decoration: none;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container .userName_userIgName_Container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container .userName_userIgName_Container #archibongezekie_userName {
+  color: #fff;
+}
+body #side_Content .footer #archibongezekie_Profile .archibongezekie_Picture_Container #Ezekiel_Archiong {
+  color: rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer #archibongezekie_Profile .switchAccount_Container {
+  position: relative;
+  right: 80px;
+}
+body #side_Content .footer #archibongezekie_Profile .switchAccount_Container a {
+  text-decoration: none;
+  color: #1877f2;
+}
+body #side_Content .footer .Suggested_For_You {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body #side_Content .footer .Suggested_For_You #Suggestion {
+  color: rgba(243, 250, 255, 0.549);
+  padding-left: 19px;
+}
+body #side_Content .footer .Suggested_For_You #see_All {
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  right: 70px;
+}
+body #side_Content .footer .Suggested_For_You #see_All:hover {
+  color: rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  position: relative;
+  left: 10px;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container #kielyWrld_picture_container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container #kiely_Wrld_photo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  padding: 5px;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container a {
+  text-decoration: none;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .userName1_userIgName1_Container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .userName1_userIgName1_Container #kiely_Wrld_userName {
+  color: #fff;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .userName1_userIgName1_Container #Ezekiel_Bassey {
+  color: rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .follow_Container1 {
+  position: relative;
+  right: 50px;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .follow_Container1 #f {
+  text-decoration: none;
+  color: #1877f2;
+}
+body #side_Content .footer .kiely_Wrld_Profile_Container .follow_Container1 #f:hover {
+  color: white;
+}
+body #side_Content .footer #page_information_Container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: relative;
+  left: 10px;
+  top: 35px;
+  padding: 4px;
+  font-size: 14px;
+  font-family: "Rajdhani", sans-serif;
+  color: rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer #page_information_Container .page_information {
+  display: flex;
+  align-items: center;
+}
+body #side_Content .footer #page_information_Container .page_information .b {
+  margin: 5px;
+}
+body #side_Content .footer #page_information_Container .page_information .b:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer #page_information_Container .about_page {
+  display: flex;
+  align-items: center;
+}
+body #side_Content .footer #page_information_Container .about_page .b {
+  margin: 5px;
+}
+body #side_Content .footer #page_information_Container .about_page .b:hover {
+  border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+}
+body #side_Content .footer #page_information_Container .about_page #language_selection {
+  appearance: none;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: rgba(243, 250, 255, 0.549);
+  font-family: "Rajdhani", sans-serif;
+  margin: 5px;
+}
+body #side_Content .footer #page_information_Container #copy_right {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}/*# sourceMappingURL=style.css.map */

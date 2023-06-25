@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: #fff;
+
+  #side_Content {
+    display: grid;
+    grid-template-columns: 240px 760px 440px;
+    grid-template-rows: 100vh;
+    overflow: hidden;
+
+    .header {
+      border-right: 1px solid rgba(132, 151, 164, 0.2);
+      text-align: center;
+      overflow: hidden;
+    }
+    .section {
+      border: 1px solid red;
+      text-align: center;
+      overflow: scroll;
+    }
+    .footer {
+      border: 1px solid blue;
+      display: flex;
+      flex-direction: column;
+      font-family: "Rajdhani", sans-serif;
+      #archibongezekie_Profile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .archibongezekie_Picture_Container {
+          display: flex;
+          align-items: center;
+          padding: 10px;
+
+          #archibongezekie_Picture {
+            width: 60px;
+            height: px;
+            border-radius: 50px;
+            padding: 5px;
+          }
+          a {
+            text-decoration: none;
+          }
+          .userName_userIgName_Container {
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+            #archibongezekie_userName {
+              color: #fff;
+            }
+          }
+          #Ezekiel_Archiong {
+            color: rgba(243, 250, 255, 0.549);
+          }
+        }
+        .switchAccount_Container {
+          position: relative;
+          right: 80px;
+
+          a {
+            text-decoration: none;
+            color: #1877f2;
+          }
+        }
+      }
+      .Suggested_For_You {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #Suggestion {
+          color: rgba(243, 250, 255, 0.549);
+          padding-left: 19px;
+        }
+        #see_All {
+          padding: 10px;
+          color: #fff;
+          position: relative;
+          right: 70px;
+        }
+        #see_All:hover {
+          color: rgba(243, 250, 255, 0.549);
+        }
+      }
+      .kiely_Wrld_Profile_Container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 400px;
+        position: relative;
+        left: 10px;
+        #kielyWrld_picture_container {
+          display: flex;
+          align-items: center;
+          padding: 5px;
+        }
+        #kiely_Wrld_photo {
+          width: 55px;
+          height: 55px;
+          border-radius: 50px;
+          padding: 5px;
+        }
+        a {
+          text-decoration: none;
+        }
+        .userName1_userIgName1_Container {
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          #kiely_Wrld_userName {
+            color: #fff;
+          }
+          #Ezekiel_Bassey {
+            color: rgba(243, 250, 255, 0.549);
+          }
+        }
+        .follow_Container1 {
+          position: relative;
+          right: 50px;
+          #f {
+            text-decoration: none;
+            color: #1877f2;
+          }
+          #f:hover {
+            color: white;
+          }
+        }
+      }
+      #page_information_Container {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        position: relative;
+        left: 10px;
+        top: 35px;
+        padding: 4px;
+        font-size: 14px;
+        font-family: "Rajdhani", sans-serif;
+        color: rgba(243, 250, 255, 0.549);
+        .page_information {
+          display: flex;
+          align-items: center;
+
+          .b {
+            margin: 5px;
+          }
+          .b:hover {
+            border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+          }
+        }
+        .about_page {
+          display: flex;
+          align-items: center;
+          .b {
+            margin: 5px;
+          }
+          .b:hover {
+            border-bottom: 1px solid rgba(243, 250, 255, 0.549);
+          }
+          #language_selection {
+            appearance: none;
+            border: none;
+            outline: none;
+            background-color: black;
+            color: rgba(243, 250, 255, 0.549);
+            font-family: "Rajdhani", sans-serif;
+            margin: 5px;
+          }
+        }
+        #copy_right {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
