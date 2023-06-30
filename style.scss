@@ -13,16 +13,59 @@ body {
     display: grid;
     grid-template-columns: 240px 760px 440px;
     grid-template-rows: 100vh;
-    overflow: hidden;
 
     .header {
+      display: flex;
+      flex-direction: column;
       border-right: 1px solid rgba(132, 151, 164, 0.2);
-      text-align: center;
       overflow: hidden;
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        margin-top: 10px;
+        font-family: "Urbanist", sans-serif;
+        #paragrach {
+          padding: 5px;
+        }
+        #page_name {
+          color: rgb(245, 245, 245);
+          padding: 20px;
+          font-weight: 100;
+          font-size: 30px;
+          font-family: "Noto Sans NKo", sans-serif;
+          font-family: "Satisfy", cursive;
+        }
+        #button {
+          display: flex;
+          align-items: center;
+
+          padding: 2px;
+          border: none;
+          outline: none;
+          background-color: black;
+          color: #fff;
+          margin: 10px;
+        }
+        .link {
+          display: flex;
+          align-items: center;
+          color: #fff;
+          text-decoration: none;
+        }
+        #img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+          padding: 6px;
+        }
+        .menu {
+          position: relative;
+          top: 230px;
+        }
+      }
     }
     .section {
-      border: 1px solid red;
-      text-align: center;
       overflow: scroll;
     }
     .footer {
@@ -74,7 +117,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        font-size: 15px;
         #Suggestion {
           color: rgba(243, 250, 255, 0.549);
           padding-left: 19px;
@@ -96,14 +139,15 @@ body {
         width: 400px;
         position: relative;
         left: 10px;
+        font-size: 15px;
         #kielyWrld_picture_container {
           display: flex;
           align-items: center;
           padding: 5px;
         }
         #kiely_Wrld_photo {
-          width: 55px;
-          height: 55px;
+          width: 45px;
+          height: 45px;
           border-radius: 50px;
           padding: 5px;
         }
@@ -142,7 +186,7 @@ body {
         top: 35px;
         padding: 4px;
         font-size: 14px;
-        font-family: "Rajdhani", sans-serif;
+        font-family: "Urbanist", sans-serif;
         color: rgba(243, 250, 255, 0.549);
         .page_information {
           display: flex;
@@ -180,76 +224,86 @@ body {
           margin-top: 15px;
         }
       }
-      .suggestion_container {
+      .ezekielDashboard {
         border-radius: 40px;
         font-family: "Urbanist", sans-serif;
         position: relative;
-        bottom: 20%;
-        display: noe;
+        bottom: 40%;
+        display: none;
+        width: 80%;
 
-        #suggestion_contaiber {
+        #ezekielSuggestion_container {
           display: flex;
           align-items: center;
           background-color: black;
           margin-left: 5px;
-
           padding: 10px;
-          #random_Photo {
-            width: 70px;
-            height: 70px;
+
+          #ezekielRandom_Photo {
+            width: 50px;
+            height: 50px;
             border-radius: 50px;
             padding: 8px;
-            #random_Name {
-              padding: 5px;
-            }
           }
-          .suggestion_Name_container {
+          #ezekielRandom_Name,
+          #ezekielRandom_UserName {
+            font-size: 14px;
+          }
+          .ezekielSuggestion_Name_container {
             display: flex;
             flex-direction: column;
             padding: 10px;
             font-family: "Urbanist", sans-serif;
+            font-size: 15px;
           }
         }
-        .post_Follower_Following {
+        .ezekielPost_Follower_Following {
           display: flex;
           justify-content: space-around;
           border-bottom: 1px solid rgba(243, 250, 255, 0.549);
           font-family: "Urbanist", sans-serif;
           background-color: black;
           padding: 10px;
-          #posts,
-          #follower,
-          #following {
+          #ezekielPosts,
+          #ezekielFollower,
+          #ezekielFollowing {
             text-align: center;
             padding: 10px;
             font-family: "Urbanist", sans-serif;
             background-color: black;
+            font-size: 13px;
           }
         }
       }
-      #post_center {
+      #ezekielPost_center {
         text-align: center;
         padding: 10px;
         font-family: "Urbanist", sans-serif;
         background-color: black;
-        #add_post {
+        font-size: 13px;
+        #ezekielAdd_post {
           margin: 10px;
+          font-size: 13px;
         }
-        #add_a_photo_icon {
-          font-size: 5vh;
+        #ezekielAdd_a_photo_icon {
+          font-size: 4vh;
           background: linear-gradient(black, black) padding-box,
             linear-gradient(to right, orange, darkorchid) border-box;
           border-radius: 50em;
           border: 2px solid transparent;
           padding: 10px;
         }
-        #p {
+        #ezekiel1 {
+          font-size: 16px;
+        }
+        #ezekiel_p {
           margin: 13px;
           padding: 10px;
           border-bottom: 1px solid rgba(243, 250, 255, 0.549);
           background-color: black;
+          font-size: 13px;
         }
-        .follow_button {
+        .ezekielFollow_button {
           outline: none;
           border: none;
           background: #1877f2;
@@ -260,11 +314,16 @@ body {
           padding: 5px;
           border-radius: 5px;
           margin: auto;
-
-          width: 90%;
-          font-size: 20px;
+          width: 79%;
+          font-size: 15px;
           font-family: "Urbanist", sans-serif;
         }
+      }
+      #graces {
+        border-radius: 40px;
+        font-family: "Urbanist", sans-serif;
+        position: relative;
+        bottom: 40%;
       }
     }
   }

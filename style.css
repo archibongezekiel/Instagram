@@ -13,16 +13,58 @@ body #side_Content {
   display: grid;
   grid-template-columns: 240px 760px 440px;
   grid-template-rows: 100vh;
-  overflow: hidden;
 }
 body #side_Content .header {
+  display: flex;
+  flex-direction: column;
   border-right: 1px solid rgba(132, 151, 164, 0.2);
-  text-align: center;
   overflow: hidden;
 }
+body #side_Content .header .container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+body #side_Content .header .container #paragrach {
+  padding: 5px;
+}
+body #side_Content .header .container #page_name {
+  color: rgb(245, 245, 245);
+  padding: 20px;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+}
+body #side_Content .header .container #button {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  margin: 10px;
+}
+body #side_Content .header .container .link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+body #side_Content .header .container #img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 6px;
+}
+body #side_Content .header .container .menu {
+  position: relative;
+  top: 230px;
+}
 body #side_Content .section {
-  border: 1px solid red;
-  text-align: center;
   overflow: scroll;
 }
 body #side_Content .footer {
@@ -72,6 +114,7 @@ body #side_Content .footer .Suggested_For_You {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 15px;
 }
 body #side_Content .footer .Suggested_For_You #Suggestion {
   color: rgba(243, 250, 255, 0.549);
@@ -93,6 +136,7 @@ body #side_Content .footer .kiely_Wrld_Profile_Container {
   width: 400px;
   position: relative;
   left: 10px;
+  font-size: 15px;
 }
 body #side_Content .footer .kiely_Wrld_Profile_Container #kielyWrld_picture_container {
   display: flex;
@@ -100,8 +144,8 @@ body #side_Content .footer .kiely_Wrld_Profile_Container #kielyWrld_picture_cont
   padding: 5px;
 }
 body #side_Content .footer .kiely_Wrld_Profile_Container #kiely_Wrld_photo {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50px;
   padding: 5px;
 }
@@ -139,7 +183,7 @@ body #side_Content .footer #page_information_Container {
   top: 35px;
   padding: 4px;
   font-size: 14px;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Urbanist", sans-serif;
   color: rgba(243, 250, 255, 0.549);
 }
 body #side_Content .footer #page_information_Container .page_information {
@@ -176,36 +220,39 @@ body #side_Content .footer #page_information_Container #copy_right {
   align-items: center;
   margin-top: 15px;
 }
-body #side_Content .footer .suggestion_container {
+body #side_Content .footer .ezekielDashboard {
   border-radius: 40px;
   font-family: "Urbanist", sans-serif;
   position: relative;
-  bottom: 20%;
-  display: noe;
+  bottom: 40%;
+  display: none;
+  width: 80%;
 }
-body #side_Content .footer .suggestion_container #suggestion_contaiber {
+body #side_Content .footer .ezekielDashboard #ezekielSuggestion_container {
   display: flex;
   align-items: center;
   background-color: black;
   margin-left: 5px;
   padding: 10px;
 }
-body #side_Content .footer .suggestion_container #suggestion_contaiber #random_Photo {
-  width: 70px;
-  height: 70px;
+body #side_Content .footer .ezekielDashboard #ezekielSuggestion_container #ezekielRandom_Photo {
+  width: 50px;
+  height: 50px;
   border-radius: 50px;
   padding: 8px;
 }
-body #side_Content .footer .suggestion_container #suggestion_contaiber #random_Photo #random_Name {
-  padding: 5px;
+body #side_Content .footer .ezekielDashboard #ezekielSuggestion_container #ezekielRandom_Name,
+body #side_Content .footer .ezekielDashboard #ezekielSuggestion_container #ezekielRandom_UserName {
+  font-size: 14px;
 }
-body #side_Content .footer .suggestion_container #suggestion_contaiber .suggestion_Name_container {
+body #side_Content .footer .ezekielDashboard #ezekielSuggestion_container .ezekielSuggestion_Name_container {
   display: flex;
   flex-direction: column;
   padding: 10px;
   font-family: "Urbanist", sans-serif;
+  font-size: 15px;
 }
-body #side_Content .footer .suggestion_container .post_Follower_Following {
+body #side_Content .footer .ezekielDashboard .ezekielPost_Follower_Following {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid rgba(243, 250, 255, 0.549);
@@ -213,37 +260,44 @@ body #side_Content .footer .suggestion_container .post_Follower_Following {
   background-color: black;
   padding: 10px;
 }
-body #side_Content .footer .suggestion_container .post_Follower_Following #posts,
-body #side_Content .footer .suggestion_container .post_Follower_Following #follower,
-body #side_Content .footer .suggestion_container .post_Follower_Following #following {
+body #side_Content .footer .ezekielDashboard .ezekielPost_Follower_Following #ezekielPosts,
+body #side_Content .footer .ezekielDashboard .ezekielPost_Follower_Following #ezekielFollower,
+body #side_Content .footer .ezekielDashboard .ezekielPost_Follower_Following #ezekielFollowing {
   text-align: center;
   padding: 10px;
   font-family: "Urbanist", sans-serif;
   background-color: black;
+  font-size: 13px;
 }
-body #side_Content .footer #post_center {
+body #side_Content .footer #ezekielPost_center {
   text-align: center;
   padding: 10px;
   font-family: "Urbanist", sans-serif;
   background-color: black;
+  font-size: 13px;
 }
-body #side_Content .footer #post_center #add_post {
+body #side_Content .footer #ezekielPost_center #ezekielAdd_post {
   margin: 10px;
+  font-size: 13px;
 }
-body #side_Content .footer #post_center #add_a_photo_icon {
-  font-size: 5vh;
+body #side_Content .footer #ezekielPost_center #ezekielAdd_a_photo_icon {
+  font-size: 4vh;
   background: linear-gradient(black, black) padding-box, linear-gradient(to right, orange, darkorchid) border-box;
   border-radius: 50em;
   border: 2px solid transparent;
   padding: 10px;
 }
-body #side_Content .footer #post_center #p {
+body #side_Content .footer #ezekielPost_center #ezekiel1 {
+  font-size: 16px;
+}
+body #side_Content .footer #ezekielPost_center #ezekiel_p {
   margin: 13px;
   padding: 10px;
   border-bottom: 1px solid rgba(243, 250, 255, 0.549);
   background-color: black;
+  font-size: 13px;
 }
-body #side_Content .footer #post_center .follow_button {
+body #side_Content .footer #ezekielPost_center .ezekielFollow_button {
   outline: none;
   border: none;
   background: #1877f2;
@@ -254,7 +308,13 @@ body #side_Content .footer #post_center .follow_button {
   padding: 5px;
   border-radius: 5px;
   margin: auto;
-  width: 90%;
-  font-size: 20px;
+  width: 79%;
+  font-size: 15px;
   font-family: "Urbanist", sans-serif;
+}
+body #side_Content .footer #graces {
+  border-radius: 40px;
+  font-family: "Urbanist", sans-serif;
+  position: relative;
+  bottom: 40%;
 }/*# sourceMappingURL=style.css.map */

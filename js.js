@@ -137,17 +137,33 @@ const random_UserName = document.querySelector("#random_UserName"); ////////////
 const follow_button = document.querySelector(".follow_button"); //////////////////////
 let inc = 0; ////////////////////////////////////////////////////////////////////////
 const follower = document.querySelector(".follower"); ////////////////////////////////
-const i = document.querySelector("#f");
+
 ////////////////////////////////////////////////////////////////////////////////////
+const ezekielDashboard = document.querySelector(".ezekielDashboard");
+const ezekielRandom_Photo = document.querySelector("#ezekielRandom_Photo");
+const ezekielRandom_Name = document.querySelector("#ezekielRandom_Name");
+const ezekielRandom_UserName = document.querySelector(
+  "#ezekielRandom_UserName"
+);
+const ezekielAdd_a_photo_icon = document.querySelector("#photoShareByRandom");
+const ezekielFollowerNumber = document.querySelector(".ezekielFollowerNumber");
+const ezekielFollow_button = document.querySelector(".ezekielFollow_button");
+const kiely_Wrld_Profile_Container = document.querySelector(
+  ".kiely_Wrld_Profile_Container"
+);
+let ezekielFollowButtonCount = 0;
+const i = document.querySelector("#f");
+/////////////////////////////////////////////////////////////////////////////////
 class car {
   ezekiel() {
-    suggestion_container.style.display = "inlin";
-    randomPhoto.setAttribute("src", "image/photo.jpeg");
-    randomName.innerText = "Ezekiel Bassey";
-    random_UserName.innerText = "Ezekiel Archibong";
-    photoShareByRandom.innerText = "Ezekiel Bassey";
-    follower.innerText = inc;
+    ezekielDashboard.style.display = "inline";
+    ezekielRandom_Photo.setAttribute("src", "image/photo.jpeg");
+    ezekielRandom_Name.innerText = "Ezekiel Bassey";
+    ezekielRandom_UserName.innerText = "Ezekiel Archibong";
+    ezekielAdd_a_photo_icon.innerText = "Ezekiel Bassey";
+    ezekielFollowerNumber.innerText = ezekielFollowButtonCount;
   }
+
   Precious() {
     suggestion_container.style.display = "inline";
     randomPhoto.setAttribute("src", "image/images (2).jpeg");
@@ -169,35 +185,34 @@ class car {
     random_UserName.innerText = "Grace Archibong";
     photoShareByRandom.innerText = "Grace Archibong";
   }
-
-  follow() {
-    inc = inc + 1;
+  ezekielFollow() {
+    ezekielFollowButtonCount++;
+    kiely_Wrld_Profile_Container.style.display = "none";
+    ezekielDashboard.style.display = "none";
   }
 }
 ////////////////////////////////////////////////////////////////////////
 const ezekielHoverLink = document.querySelector(".ezekielHoverLink"); ///
 let ezekiel = new car(); //////////////////////////////////////////////
+
 ezekielHoverLink.addEventListener("mouseover", () => {
   ezekiel.ezekiel();
-
-  suggestion_container.addEventListener("mouseover", () => {
-    suggestion_container.style.display = "inline";
-    suggestion_container.addEventListener("mouseout", () => {
-      suggestion_container.style.display = "none";
-    });
-  });
+  ezekielHoverLink.addEventListener("mouseout", () => {});
 });
-let numberInc = new car();
-follow_button.addEventListener("click", () => {
-  numberInc.follow();
-  if (inc === 1) {
-    follower.innerText = inc;
+let number = new car();
+ezekielFollow_button.addEventListener("click", () => {
+  number.ezekielFollow();
+  if (ezekielFollowButtonCount === 1) {
+    ezekielFollowerNumber.innerText = ezekielFollowButtonCount;
   }
 });
 ///////////////////////////////////////////////////
 
 i.addEventListener("click", () => {
-  numberInc.follow();
+  number.ezekielFollow();
+  if (ezekielFollowButtonCount === 1) {
+    ezekielFollowerNumber.innerText = ezekielFollowButtonCount;
+  }
 });
 ///////////////////////////////////////////////////////////////////////////
 const preciousHoverLink = document.querySelector(".preciousHoverLink"); ///
@@ -688,7 +703,7 @@ _godswillokon.addEventListener("mouseover", () => {
           <div id="create">
             <button type="button" id="button" title="Create">
               <span class="material-symbols-outlined"> add_box </span>
-              <p>Create</p>
+              <p>Create</p>  </button>
           </div>
           <!--profile-->
           <a href="archibongezekie.html">
