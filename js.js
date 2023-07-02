@@ -1,9 +1,10 @@
 "use strict";
 //charles Account information//
-/*onst navigate_next_button = document.querySelector(".navigate_next_button");
 const navigate_before_button = document.querySelector(
   ".navigate_before_button"
 );
+const navigate_next_button = document.querySelector(".navigate_next_button");
+let charles_Account_Pic = document.querySelector(".charles_Account_Pic");
 ///////////////////////////////////////////////
 let charlesGallery = [
   "gallery2/charles1.jpeg",
@@ -16,13 +17,15 @@ navigate_next_button.addEventListener("click", () => {
   next();
 });
 ///////////////////////////////////////////////////////////////////////////////
-let i = 0;
+let num = 0;
 function next() {
-  if (i >= charlesGallery.length - 1) {
+  if (num >= charlesGallery.length - 1) {
     return false;
   }
-  i++;
-  charles_Account_Pic.setAttribute("src", charlesGallery[i]);
+  num++;
+  charles_Account_Pic.setAttribute("src", charlesGallery[num]);
+  charles_Account_Pic.style.width = "85%";
+  charles_Account_Pic.style.height = "79vh";
 }
 ///////////////////////////////////////////////////////////////////////
 navigate_before_button.addEventListener("click", () => {
@@ -30,11 +33,13 @@ navigate_before_button.addEventListener("click", () => {
 });
 ///////////////////////////////////////////////////////////////////////////////////
 function back() {
-  if (i <= 0) {
+  if (num <= 0) {
     return false;
   }
-  i--;
-  charles_Account_Pic.setAttribute("src", charlesGallery[i]);
+  num--;
+  charles_Account_Pic.setAttribute("src", charlesGallery[num]);
+  charles_Account_Pic.style.width = "85%";
+  charles_Account_Pic.style.height = "79vh";
 }
 /////////////////////////////////////////////////////////////////////////////////////////////
 const charles_Comment_Input = document.querySelector(".charles_Comment_Input");
@@ -75,7 +80,6 @@ let c = 0;
 function numberOfCount() {
   c = c + 1;
 }
-
 charles_like_button.addEventListener("click", () => {
   numberOfCount();
   if (c === 1) {
@@ -93,7 +97,15 @@ console.log(returns(""));
 //
 const likeButton = document.querySelector("#like1");
 
-//
+/////////////////////////////////////////////////////////////////////
+document.querySelector("#list").addEventListener("click", () => {
+  document.querySelector(".listMenu").style.display = "flex";
+  document.querySelector(".header").style.filter = "blur(2px)";
+  document.querySelector(".footer").style.filter = "blur(2px)";
+  document.querySelector("#a").style.filter = "blur(2px)";
+  document.querySelector("#b").style.filter = "blur(2px)";
+  document.querySelector("#c").style.filter = "blur(2px)";
+});
 /*
 let commentSection2 = document.querySelector(".g2");
 
@@ -245,6 +257,7 @@ graceHoverLink.addEventListener("mouseover", () => {
     suggestion_container.style.display = "none";
   }
 });
+
 /*
 myUserName.addEventListener("mouseover", () => {
   dashBoard.style.display = "inline";
@@ -475,114 +488,8 @@ _godswillokon.addEventListener("mouseover", () => {
               </span>
             </button>
           </div>
-          <!--comment like share icon -->
-          <div id="like_comment_share_save">
-            <div class="f_c_s_s">
-              <span
-                class="material-symbols-outlined"
-                id="charles_like_button"
-                title="Like"
-              >
-                favorite
-              </span>
-              <svg
-                aria-label="Comment"
-                class="x1lliihq x1n2onr6"
-                color="rgb(245, 245, 245)"
-                fill="rgb(245, 245, 245)"
-                height="24"
-                role="img"
-                viewBox="0 0 24 24"
-                width="25"
-                id="comment"
-              >
-                <title>Comment</title>
-                <path
-                  d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></path>
-              </svg>
-              <svg
-                aria-label="Share Post"
-                class="x1lliihq x1n2onr6"
-                color="rgb(245, 245, 245)"
-                fill="rgb(245, 245, 245)"
-                height="24"
-                role="img"
-                viewBox="0 0 24 24"
-                width="24"
-                id="share"
-              >
-                <title>Share Post</title>
-                <line
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  x1="22"
-                  x2="9.218"
-                  y1="3"
-                  y2="10.083"
-                ></line>
-                <polygon
-                  fill="none"
-                  points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
-                  stroke="currentColor"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                ></polygon>
-              </svg>
-            </div>
-            <span class="material-symbols-outlined" id="book" title="save">
-              bookmark
-            </span>
-           
-            <!-- end comment like share icon -->
-          </div>
-
-          <div id="font">
-            <div class="like_number" id="i"></div>
-            <div id="caption_container">
-              <b id="caption_Name">Zealcodes</b>
-              <span class="caption"
-                >this new week, we think smarter and work smarter.
-                <p>happy new week, guys</p></span
-              > <div class="View_comment" id="comment_container"></div>
-            </div>
-            
-            <div id="caption_container">
-              <div id="input_comment">
-                <input
-                  type="text"
-                  name="Add a comment... "
-                  id="comment_section"
-                  placeholder="Add a comment..."
-                  class="charles_Comment_Input"
-                />
-                <button id="charles_Post_Button"><b>Post</b></button>
-                <svg
-                  aria-label="Emoji"
-                  class="x1lliihq x1n2onr6"
-                  color="rgb(115, 115, 115)"
-                  fill="rgb(115, 115, 115)"
-                  height="13"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  width="13"
-                >
-                  <title>Emoji</title>
-                  <path
-                    d="M15.83 10.997a1.167 1.167 0 1 0 1.167 1.167 1.167 1.167 0 0 0-1.167-1.167Zm-6.5 1.167a1.167 1.167 0 1 0-1.166 1.167 1.167 1.167 0 0 0 1.166-1.167Zm5.163 3.24a3.406 3.406 0 0 1-4.982.007 1 1 0 1 0-1.557 1.256 5.397 5.397 0 0 0 8.09 0 1 1 0 0 0-1.55-1.263ZM12 .503a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12 .503Zm0 21a9.5 9.5 0 1 1 9.5-9.5 9.51 9.51 0 0 1-9.5 9.5Z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <!--end div  c -->
-        </div>*/
+ 
+ 
 /////////////////////////////////////////
 /////////////////////
 /*div class="head">
@@ -678,46 +585,5 @@ _godswillokon.addEventListener("mouseover", () => {
               >
                 <title>Messenger</title>
                 <path
-                  d="M12.003 2.001a9.705 9.705 0 1 1 0 19.4 10.876 10.876 0 0 1-2.895-.384.798.798 0 0 0-.533.04l-1.984.876a.801.801 0 0 1-1.123-.708l-.054-1.78a.806.806 0 0 0-.27-.569 9.49 9.49 0 0 1-3.14-7.175 9.65 9.65 0 0 1 10-9.7Z"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-miterlimit="10"
-                  stroke-width="1.739"
-                ></path>
-                <path
-                  d="M17.79 10.132a.659.659 0 0 0-.962-.873l-2.556 2.05a.63.63 0 0 1-.758.002L11.06 9.47a1.576 1.576 0 0 0-2.277.42l-2.567 3.98a.659.659 0 0 0 .961.875l2.556-2.049a.63.63 0 0 1 .759-.002l2.452 1.84a1.576 1.576 0 0 0 2.278-.42Z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <p>Messages</p>
-            </button>
-          </div>
-          <!--Notifications-->
-          <div id="notifications">
-            <button type="button " title="Notifications" id="button">
-              <span class="material-symbols-outlined"> favorite </span>
-              <p>Notifications</p>
-            </button>
-          </div>
-          <!--create-->
-          <div id="create">
-            <button type="button" id="button" title="Create">
-              <span class="material-symbols-outlined"> add_box </span>
-              <p>Create</p>  </button>
-          </div>
-          <!--profile-->
-          <a href="archibongezekie.html">
-            <div class="image_container" id="profile">
-              <img src="image/myIcon.jpeg" alt="profile image" id="img" />
-              <p>Profile</p>
-            </div></a
-          >
-          <!--more icon-->
-          <div id="more_container">
-          <button type=" button " id="button" title="Menu">
-            <span class="material-symbols-outlined"> menu </span>
-            <p>More</p>
-          </button>
-        </div>
-      </div>
+                  
       <!---end-->*/
