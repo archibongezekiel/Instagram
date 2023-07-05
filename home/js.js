@@ -1,5 +1,13 @@
 "use strict";
 //charles Account information//
+document.querySelector("#list").addEventListener("click", () => {
+  document.querySelector(".listMenu").style.display = "flex";
+  document.querySelector(".header").style.filter = "blur(2px)";
+  document.querySelector(".footer").style.filter = "blur(2px)";
+  document.querySelector("#a").style.filter = "blur(2px)";
+  document.querySelector("#b").style.filter = "blur(2px)";
+  document.querySelector("#c").style.filter = "blur(2px)";
+});
 const navigate_before_button = document.querySelector(
   ".navigate_before_button"
 );
@@ -98,14 +106,7 @@ console.log(returns(""));
 const likeButton = document.querySelector("#like1");
 
 /////////////////////////////////////////////////////////////////////
-document.querySelector("#list").addEventListener("click", () => {
-  document.querySelector(".listMenu").style.display = "flex";
-  document.querySelector(".header").style.filter = "blur(2px)";
-  document.querySelector(".footer").style.filter = "blur(2px)";
-  document.querySelector("#a").style.filter = "blur(2px)";
-  document.querySelector("#b").style.filter = "blur(2px)";
-  document.querySelector("#c").style.filter = "blur(2px)";
-});
+
 /*
 let commentSection2 = document.querySelector(".g2");
 

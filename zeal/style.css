@@ -1,0 +1,302 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: #fff;
+}
+body #scroll {
+  display: grid;
+  grid-template-columns: 240px 83%;
+  grid-template-rows: 100vh;
+  /*information-container */
+}
+body #scroll .header {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(132, 151, 164, 0.2);
+  overflow: hidden;
+}
+body #scroll .header .container {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-top: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+body #scroll .header .container #paragrach {
+  padding: 5px;
+  font-size: 17px;
+}
+body #scroll .header .container #page_name {
+  color: rgb(245, 245, 245);
+  padding: 20px;
+  font-weight: 100;
+  font-size: 30px;
+  font-family: "Noto Sans NKo", sans-serif;
+  font-family: "Satisfy", cursive;
+}
+body #scroll .header .container #home {
+  text-decoration: none;
+}
+body #scroll .header .container .home {
+  width: 210px;
+}
+body #scroll .header .container #button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  margin: 6px;
+  font-family: "Urbanist", sans-serif;
+}
+body #scroll .header .container .link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+body #scroll .header .container .link .width {
+  width: 220px;
+  height: 40px;
+  font-size: 17px;
+}
+body #scroll .header .container #img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+body #scroll .header .container .menu {
+  position: relative;
+  top: 230px;
+}
+body #scroll .header .container #button:hover {
+  background-color: #24282e;
+  border-radius: 20px;
+}
+body #scroll .information-container {
+  overflow: scroll;
+}
+body #scroll .information-container #charlesDetail {
+  display: grid;
+  grid-template-columns: 310px 67%;
+  grid-template-rows: 300px;
+  border: 1px solid re;
+  width: 79%;
+  margin: auto;
+  border-bottom: 1px solid #1c1e21;
+}
+body #scroll .information-container #charlesDetail #num1 {
+  margin: auto;
+}
+body #scroll .information-container #charlesDetail #num1 #zealcode_photo {
+  border-radius: 100px;
+}
+body #scroll .information-container #charlesDetail #num {
+  border: 2px solid blu;
+}
+body #scroll .information-container #charlesDetail #num .information {
+  display: flex;
+  align-items: center;
+  border: 1px solid re;
+  margin-top: 25px;
+  width: 420px;
+}
+body #scroll .information-container #charlesDetail #num .information #zealcodes {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  margin-right: 25px;
+}
+body #scroll .information-container #charlesDetail #num .information .button {
+  outline: none;
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 8px;
+}
+body #scroll .information-container #charlesDetail #num .information #followingButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #scroll .information-container #charlesDetail #num .information #person_add {
+  border: none;
+  outline: none;
+  border-radius: 9px;
+  color: #24282e;
+  padding: 7px;
+  background-color: #fff;
+  margin: 3px;
+  height: 30px;
+}
+body #scroll .information-container #charlesDetail #num .information #person_add #person_add_icon {
+  font-size: 18px;
+}
+body #scroll .information-container #charlesDetail #num .information #menu_icon {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: #fff;
+  margin: 5px;
+}
+body #scroll .information-container #charlesDetail #num .follow_list {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  font-family: "Mukta", sans-serif;
+  border: 1px solid r;
+  width: 420px;
+  margin-top: 26px;
+}
+body #scroll .information-container #charlesDetail #num .follow_list #post_number {
+  font-family: "Mukta", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  margin-right: 40px;
+}
+body #scroll .information-container #charlesDetail #num .follow_list #followers_number {
+  font-family: "Mukta", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  margin-right: 40px;
+}
+body #scroll .information-container #charlesDetail #num .follow_list #followings_number {
+  font-family: "Mukta", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  margin: 5px;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link {
+  border: 1px solid re;
+  font-family: "Abel", sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+  padding: 1px;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #a,
+body #scroll .information-container #charlesDetail #num .bio_name_link #b,
+body #scroll .information-container #charlesDetail #num .bio_name_link #c {
+  padding: 1px;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #b {
+  color: rgb(168, 168, 168);
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #website_link {
+  text-decoration: none;
+  color: #fff;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #website_link:hover {
+  border-bottom: 1px solid #f2f3f5;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #d {
+  margin-top: 13px;
+}
+body #scroll .information-container #charlesDetail #num .bio_name_link #e {
+  font-weight: bolder;
+  font-size: 15px;
+}
+body #scroll .information-container .a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 79%;
+  margin: auto;
+}
+body #scroll .information-container .a #a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 70px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  border-top: 1px solid #fff;
+  font-weight: 100px;
+  font-size: 13px;
+  padding: 5px;
+  height: 50px;
+}
+body #scroll .information-container .a #a #b {
+  margin-right: 5px;
+}
+body #scroll .information-container .a .b {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100px;
+  font-size: 14px;
+  height: 50px;
+  color: rgb(168, 168, 168);
+}
+body #scroll .information-container .a .c {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 100px;
+  font-size: 14px;
+  height: 50px;
+  position: relative;
+  left: 58px;
+  color: rgb(168, 168, 168);
+  fill: rgb(168, 168, 168);
+}
+body #scroll .information-container .sharing-of-photos {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid re;
+  width: 79%;
+  margin: auto;
+}
+body #scroll .information-container .sharing-of-photos .section1 {
+  display: flex;
+  margin: 3px;
+  align-items: center;
+  margin: auto;
+}
+body #scroll .information-container .sharing-of-photos .section1 #album1 {
+  width: 300px;
+  height: 330px;
+  margin: 5px;
+}
+body #scroll .information-container .sharing-of-photos .section2 {
+  display: flex;
+  margin: 3px;
+  align-items: center;
+  margin: auto;
+}
+body #scroll .information-container .sharing-of-photos .section2 #album2 {
+  width: 300px;
+  height: 330px;
+  margin: 5px;
+}
+body #scroll .information-container .sharing-of-photos .section3 {
+  display: flex;
+  margin: 3px;
+  align-items: center;
+  margin: auto;
+}
+body #scroll .information-container .sharing-of-photos .section3 #album3 {
+  width: 300px;
+  height: 330px;
+  margin: 5px;
+}
+body #scroll .information-container .sharing-of-photos .section4 {
+  display: flex;
+  margin: 3px;
+  align-items: center;
+  box-sizing: border-box;
+  margin: auto;
+}
+body #scroll .information-container .sharing-of-photos .section4 #album4 {
+  width: 300px;
+  height: 330px;
+  margin: 5px;
+}/*# sourceMappingURL=style.css.map */

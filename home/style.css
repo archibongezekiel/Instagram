@@ -93,6 +93,13 @@ body #side_Content .section #border #a .my {
   display: flex;
   align-items: center;
 }
+body #side_Content .section #border #a .my #link_account {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+}
 body #side_Content .section #border #a .my #charlesDP {
   width: 45px;
   height: 45px;
@@ -109,13 +116,14 @@ body #side_Content .section #border #a .my #charlesUserName:hover {
 }
 body #side_Content .section #border #a .my #verifiedIcon {
   font-size: 14px;
-  color: #1877f2;
+  color: #3578e5;
   margin: 5px;
   cursor: pointer;
 }
 body #side_Content .section #border #a #list {
   font-size: 12px;
   cursor: pointer;
+  margin-right: 10px;
 }
 body #side_Content .section #border #a #list:hover {
   color: rgba(243, 250, 255, 0.549);
@@ -237,7 +245,7 @@ body #side_Content .section #border .listMenu {
   display: none;
   flex-direction: column;
   position: relative;
-  bottom: 686px;
+  bottom: 776px;
   left: 90px;
   border: 1px solid #24282e;
   border-radius: 9px;

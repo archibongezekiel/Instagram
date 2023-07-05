@@ -93,6 +93,13 @@ body {
           .my {
             display: flex;
             align-items: center;
+            #link_account {
+              display: flex;
+              align-items: center;
+              text-decoration: none;
+              color: #fff;
+              font-family: "Urbanist", sans-serif;
+            }
             #charlesDP {
               width: 45px;
               height: 45px;
@@ -110,7 +117,7 @@ body {
 
             #verifiedIcon {
               font-size: 14px;
-              color: #1877f2;
+              color: #3578e5;
               margin: 5px;
               cursor: pointer;
             }
@@ -118,6 +125,7 @@ body {
           #list {
             font-size: 12px;
             cursor: pointer;
+            margin-right: 10px;
           }
           #list:hover {
             color: rgba(243, 250, 255, 0.549);
@@ -241,7 +249,7 @@ body {
           display: none;
           flex-direction: column;
           position: relative;
-          bottom: 686px;
+          bottom: 776px;
           left: 90px;
           border: 1px solid #24282e;
           border-radius: 9px;
