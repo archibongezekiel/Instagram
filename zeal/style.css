@@ -88,7 +88,6 @@ body #scroll .information-container #charlesDetail {
   display: grid;
   grid-template-columns: 310px 67%;
   grid-template-rows: 300px;
-  border: 1px solid re;
   width: 79%;
   margin: auto;
   border-bottom: 1px solid #1c1e21;
@@ -105,7 +104,6 @@ body #scroll .information-container #charlesDetail #num {
 body #scroll .information-container #charlesDetail #num .information {
   display: flex;
   align-items: center;
-  border: 1px solid re;
   margin-top: 25px;
   width: 420px;
 }
@@ -153,7 +151,6 @@ body #scroll .information-container #charlesDetail #num .follow_list {
   align-items: center;
   padding: 2px;
   font-family: "Mukta", sans-serif;
-  border: 1px solid r;
   width: 420px;
   margin-top: 26px;
 }
@@ -176,7 +173,6 @@ body #scroll .information-container #charlesDetail #num .follow_list #followings
   margin: 5px;
 }
 body #scroll .information-container #charlesDetail #num .bio_name_link {
-  border: 1px solid re;
   font-family: "Abel", sans-serif;
   font-size: 15px;
   margin-top: 25px;
@@ -217,7 +213,7 @@ body #scroll .information-container .a #a {
   position: relative;
   right: 70px;
   color: #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Mukta", sans-serif;
   border-top: 1px solid #fff;
   font-weight: 100px;
   font-size: 13px;
@@ -230,28 +226,84 @@ body #scroll .information-container .a #a #b {
 body #scroll .information-container .a .b {
   display: flex;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Mukta", sans-serif;
   font-weight: 100px;
   font-size: 14px;
   height: 50px;
   color: rgb(168, 168, 168);
 }
+body #scroll .information-container .a .b #b {
+  margin-right: 5px;
+}
 body #scroll .information-container .a .c {
   display: flex;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Mukta", sans-serif;
   font-weight: 100px;
   font-size: 14px;
   height: 50px;
   position: relative;
   left: 58px;
   color: rgb(168, 168, 168);
-  fill: rgb(168, 168, 168);
+}
+body #scroll .information-container .a .c #c {
+  margin-right: 5px;
+}
+body #scroll .information-container .account_display {
+  display: none;
+  background-color: #121214;
+  border-radius: 15px;
+  width: 410px;
+  height: 50%;
+  position: fixed;
+  right: 500px;
+  bottom: 200px;
+}
+body #scroll .information-container .account_display .ac_be {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 15px;
+}
+body #scroll .information-container .account_display .ac_be #cha_pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  margin: auto;
+  padding: 4px;
+}
+body #scroll .information-container .account_display #close_icon {
+  position: relative;
+  bottom: 98px;
+  left: 179px;
+  font-size: 28px;
+}
+body #scroll .information-container .account_display .button_container {
+  display: flex;
+  flex-direction: column;
+}
+body #scroll .information-container .account_display .button_container #star1 {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+}
+body #scroll .information-container .account_display .button_container #add_star {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  outline: none;
+  border: none;
+  padding: 15px;
+  background-color: #121214;
+  color: #fff;
+}
+body #scroll .information-container .account_display #add_star:hover {
+  background-color: #1c1f20;
 }
 body #scroll .information-container .sharing-of-photos {
   display: flex;
   flex-direction: column;
-  border: 1px solid re;
   width: 79%;
   margin: auto;
 }
