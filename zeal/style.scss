@@ -419,6 +419,9 @@ body {
             margin: 5px;
           }
         }
+        .option-select {
+          border: 1px solid red;
+        }
         .section4 {
           display: flex;
           margin: 3px;
@@ -432,71 +435,23 @@ body {
           }
         }
       }
-    }
-    .footer {
-      display: none;
-      background-color: #121214;
-      border-radius: 10px;
-      width: 410px;
-      height: 50%;
-      position: fixed;
-      right: 500px;
-      bottom: 200px;
 
-      #similar_account_container {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-bottom: 1px solid #24282e;
-        overflow: hidden;
-        padding: 10px;
-        #close_icon {
-          position: relative;
-          left: 34px;
-        }
-      }
-      .scroll {
-        overflow-y: scroll;
-        height: 89%;
+      .footer {
+        display: none;
+        background-color: #121214;
+        border-radius: 10px;
         width: 410px;
-      }
-      .Suggested_list_number2 {
-        display: flex;
-        align-items: center;
-        margin: 5px;
-        #suggest_image {
-          width: 50px;
-          height: 50px;
-          border-radius: 30px;
-          cursor: pointer;
-          margin-left: 13px;
-        }
-        #names_container {
+        height: 50%;
+        position: fixed;
+        right: 500px;
+        bottom: 200px;
+
+        #similar_account_container {
           display: flex;
-          flex-direction: column;
-          margin: 10px;
-          #user_name {
-            font-family: "Agdasima", sans-serif;
-            cursor: pointer;
-          }
-          #profile_name {
-            font-size: 15px;
-            color: rgb(168, 168, 168);
-            font-family: "Inter", sans-serif;
-            width: 125px;
-          }
-        }
-        #follow_button {
-          outline: none;
-          border: none;
-          background-color: #77a7ff;
-          color: #fff;
-          padding: 7px;
-          width: 86px;
-          border-radius: 5px;
-          padding: 5px;
-          cursor: pointer;
-          margin-left: 90px;
+          align-items: center;
+          justify-content: space-around;
+          border-bottom: 1px solid #24282e;
+          overflow: hidden;
         }
       }
     }
